@@ -1,9 +1,3 @@
-//
-//  Hello World client.
-//  Connects REQ socket to tcp://localhost:5555
-//  Sends "Hello" to server, expects "World" back
-//
-
 package main
 
 import (
