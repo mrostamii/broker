@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("Connecting to hello world server...")
 	requester, _ := zmq.NewSocket(zmq.REQ)
 	defer requester.Close()
-	requester.Connect("tcp://127.0.0.1:5555")
+	requester.Connect("tcp://127.0.0.1:23000")
 
 	srcIP := resolveHostIP()
 

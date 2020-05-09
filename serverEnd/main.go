@@ -23,7 +23,7 @@ func main() {
 	//  Socket to talk to clients
 	responder, _ := zmq.NewSocket(zmq.REP)
 	defer responder.Close()
-	responder.Bind("tcp://*:5556")
+	responder.Bind("tcp://*:23001")
 
 	for {
 		//  Wait for next request from client

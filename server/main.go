@@ -29,11 +29,11 @@ func main() {
 	//  Socket to talk to clients
 	responder, _ := zmq.NewSocket(zmq.REP)
 	defer responder.Close()
-	responder.Bind("tcp://*:5555")
+	responder.Bind("tcp://*:23000")
 
 	requester, _ := zmq.NewSocket(zmq.REQ)
 	defer requester.Close()
-	requester.Connect("tcp://127.0.0.1:5556")
+	requester.Connect("tcp://127.0.0.1:23001")
 
 	for {
 		//  Wait for next request from client
